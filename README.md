@@ -58,7 +58,7 @@ English summary: [below](#english).
 - **画面与声音**：真实 Spine 小人、官方 BGM 与音效、表情（6 套 × 6 个）、作战特效；可选的官方 3D 棋盘（需要从本机客户端提取贴图）。
 - **手机与电脑**：触摸拖拽、长按查看详情，推荐横屏；设置里可以调低画质。
 
-## 快速开始
+## 快速开始 Quick Start
 
 ### 方式一：整合包（推荐）
 
@@ -73,6 +73,20 @@ English summary: [below](#english).
    - Windows：双击 **`scripts\start-windows.bat`**。如果弹出「安全警告」，点「运行」；Windows 防火墙弹窗请勾选「专用网络」并允许。
    - macOS / Linux：在解压出的文件夹里运行 `./scripts/start.sh`（或 `bash scripts/start.sh`）。
 4. 浏览器会自动打开 `http://localhost:3000`。窗口里列出的局域网地址可以直接发给同一网络的朋友。关闭窗口（或按 `Ctrl+C`）即停止服务器。
+
+### Method 1: Install package (Recommended)
+
+The package includes the code, runtime dependencies, and all art/music needed. Just unzip the files to play; no other downloads are needed.
+
+1. **Install Node.js 22 or 24（LTS）**
+   - Windows: Open PowerShell and run `winget install OpenJS.NodeJS.LTS`, or head to the official website <https://nodejs.org/en/download> and follow their instructions to install Node.js.
+   - macOS: Run `brew install node@22`, or head to the official website <https://nodejs.org/en/download> and follow their instructions to install Node.js.
+   - Linux: Use your distro's package manager, nvm, or fnm. The official website <https://nodejs.org/en/download> has installation instructions for nvm and fnm.
+2. **Download Package**: Install the latest version's zip package at [Releases](../../releases/latest), and unzip it to a directory with a short pathname (For Windows, it is recommended not to place the folder in OneDrive).
+3. **Run**
+   - Windows: Double click on **`scripts\start-windows.bat`**. If a "security warning" pops up, click "Run". For the Windows Firewall pop-up, allow access for private network.
+   - macOS/Linux: In the unzipped package's directory, run `./scripts/start.sh` (or `bash scripts/start.sh`).
+4. Your browser should automatically open `http://localhost:3000`. The LAN address that is shown in the terminal can be sent to friends on the same local network. Close the terminal (or "Crt+C") to terminate the server.
 
 ### 方式二：从源码运行
 
